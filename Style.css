@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    transition: 0.2s linear;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+/*-------------NAVIGATION------------------------*/
+.header{
+    width: 100%;
+    height: 100vh;  
+    background-image:
+    linear-gradient(to bottom,rgba(20,10,10, 0.55), rgba(144, 9, 9, 0.60), rgba(222, 15, 74, 0.85)),
+    url('images/background_2.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 7%;
+    height:100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: rgba(222, 15, 74, 0.90);
+}
+#navbar .logo{
+    width: 150px;
+    position: absolute;
+    left: 0%;
+}
+
+#navbar .links a{
+    color: rgba(250, 250, 250);
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+
+#navbar .links a:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgba(250, 250, 250);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.5s;
+}   
+#navbar .links a:hover::after{
+    width: 100%;
+}
+#navbar .links{
+    margin-left: 55%;
+    position: absolute;
+    right: 30px;
+}
+/*-------------------------------NAVIGATION-----------------------*/
+
+
+
+
+
+
+
+
+
+/*---------------HEADER-------------*/
+.heading h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 110px;
+    padding-top: 15%;
+    color: rgba(250, 250, 250);
+    letter-spacing: 2px;
+}
+.heading h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-top: 5%;
+    color: rgba(250, 250, 250)
+}
+.banner{
+    text-align: center;
+}
+.order_btn{
+    margin: 120px auto 0;
+}
+.order_btn a{
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgba(250, 250, 250);
+    border: 3px solid white;
+    border-radius: 10px;
+    position: relative;
+    transition: color 1s;
+    z-index: 1;
+}
+.order_btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 250, 250);
+    border-radius: 5px;
+    z-index: -1;
+    transition: 0.3s;
+}
+.order_btn a:hover span{
+    width: 100%;
+}
+.order_btn a:hover{
+    color: rgba(222, 15, 74);
+}
+/*---------------HEADER-------------*/
+
+
+
+
+
+
+
+
+
+/*---------------ABOUT US-------------*/
+.about{
+    padding: 1.5rem 1.5%;
+    margin-bottom: 120px;
+}
+.about .container{
+    display: flex;
+    justify-content: space-between;
+}
+/*.about .container .image_about{
+    flex-basis: 40%;
+    background-image: url(Images/AboutUs1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 16rem 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 3% 0.5%;
+    box-shadow: 0px 0px 20px 0px rgba(222, 15, 74, 0.85);
+}*/
+.about .container .image_about{
+    height: 400px;
+    width: 600px;
+    flex-basis: 40%;
+    margin: 0 0 0 3%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(222, 15, 74, 0.85);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.about .container .about_content{
+    flex-basis: 50%;
+    padding-top: 1%;
+}
+.about .container .about_content h1{
+    font-size: 4rem;
+    color: rgba(222, 15, 74);
+    padding: 1rem 0;
+}
+.about .container .about_content h3{
+    color: rgba(0,0,0);
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+}
+.about .container .about_content p{
+    font-size: 1.4rem;
+    color: rgba(0,0,0);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+/*---------------ABOUT US-------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------OUR PRODUCT-------------*/
+.our_product{
+    padding: 1.5rem 1.5%;
+    display: flex;
+}
+.our_product .product_heading{
+    flex-basis: 40%;
+    padding: 4rem 0 0 4rem;
+    margin-right: 10%;
+}
+.our_product .product_heading h1{
+    font-size: 4rem;
+    color: rgba(222, 15, 74);
+    padding: 1rem 0;
+}
+.our_product .product_heading h3{
+    color: rgba(0,0,0);
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+}
+/*.carousel{
+    flex-basis: 50%;
+    position: relative;
+}
+.carousel_item{
+    height: 300px;
+    background-color: grey;
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: rgba(250, 250, 250);
+    display: none;
+    border-radius: 35px;
+}
+.carousel_nav{
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+.carousel_button{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin:0 5px;
+    cursor: pointer;
+}
+.carousel_button_selected{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.carousel_item_selected{
+    display: block;
+}*/
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto 120px auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0px 0px 20px 0px rgba(222, 15, 74, 0.85);
+    border-radius: 0.5rem;
+}
+
+.slide {
+    position: relative;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    animation: slideAnimation 15s infinite;
+}
+.slider:hover .slide {
+    animation-play-state: paused;
+}
+@keyframes slideAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+}
+.slide-img {
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.overlay h1{
+    font-size: 90px;
+    color: rgba(255, 123, 160, 0.85);
+}
+.overlay p{
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    padding: 10%;
+}
+.slide:hover .overlay {
+    opacity: 1;
+}
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+    opacity: 1;
+}
+/*---------------OUR PRODUCT-------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------FOOTER-------------*/
+.footer{
+    background-color: rgb(77, 24, 0);
+    padding: 70px 0;
+    height: 45vh;
+    bottom: 0;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_container{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+    background-color: rgba(255, 164, 190, 0.9);
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+.footer-col p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+.footer-col ul li a:hover{
+    color: rgba(255, 255, 255);
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255);
+    transition: .3s ease;;
+}
+.footer-col .social-links a:hover{
+    color: rgb(223, 15, 74);
+    background-color: rgba(255, 255, 255);
+}
+ul{
+    list-style: none;
+}
+.copyright-section{
+    background-color: rgb(77, 24, 0);
+    color: rgba(255, 255, 255);
+    font-size: 12px;
+    top: 0;
+    text-align: center;
+    padding: 5px;
+}
+/*---------------FOOTER-------------*/
+
+
+
+
+
+
+
+
+/*---------------RESPONSIVENESS--------*/
+/* Keep your existing CSS */
+
+/* Media query for screens with a maximum width of 770px */
+@media (max-width: 770px) {
+    .heading h1 {
+        font-size: 60px; /* Adjust the font size to fit smaller screens */
+    }
+    .heading h3 {
+        font-size: 20px; /* Adjust the font size to fit smaller screens */
+    }
+    #navbar {
+        padding: 1em 5%; /* Adjust the padding for smaller screens */
+    }
+    #navbar .links {
+        margin-left: 0; /* Center the links in smaller screens */
+        right: 0;
+    }
+    #navbar .links a {
+        font-size: 0.9rem; /* Adjust the font size for smaller screens */
+        margin-right: 1rem; /* Decrease the margin between links */
+    }
+    .order_btn {
+        margin-top: 60px; /* Adjust the margin for the button */
+    }
+    .order_btn a {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 1280px) {
+}
+
+/*---------------RESPONSIVENESS--------*/

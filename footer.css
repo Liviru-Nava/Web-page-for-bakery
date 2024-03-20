@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    text-decoration: none;
+    transition: 0.2s linear;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+.footer{
+    background-color: rgb(77, 24, 0);
+    padding: 70px 0 0 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_container{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+    background-color: rgba(255, 164, 190, 0.9);
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+.footer-col p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+.footer-col ul li a:hover{
+    color: rgba(255, 255, 255);
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255);
+    transition: .3s ease;;
+}
+.footer-col .social-links a:hover{
+    color: rgb(223, 15, 74);
+    background-color: rgba(255, 255, 255);
+}
+ul{
+    list-style: none;
+}
+.copyright-section{
+    background-color: rgb(77, 24, 0);
+    color: rgba(255, 255, 255);
+    font-size: 12px;
+    top: 0;
+    text-align: center;
+    padding: 5px;
+}
+.contact_details p{
+    font-size: 18px;
+    color: white;
+    text-transform: lowercase;
+}
+.contact_details a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.contact_details a:hover{
+    color: rgba(255, 152, 182, 0.85);
+}
+.contact_details a:active{
+    color: rgba(255, 0, 140, 0.85);
+}
+.footer-col .contact_details{
+    margin-top:20px;
+}
+
+
+@media (max-width: 811px) {
+    /*---------------FOOTER-------------*/
+    .footer-col h4{
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        position: relative;
+    }
+    .footer-col ul li a{
+        font-size: 14px;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255);
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+    }
+    .footer-col p{
+        font-size: 14px;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255);
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+    }
+    .copyright-section{
+        background-color: rgb(77, 24, 0);
+        color: rgba(255, 255, 255);
+        font-size: 12px;
+        top: 0;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .contact_details p{
+        font-size: 14px;
+        color: white;
+        text-transform: lowercase;
+    }
+    /*---------------FOOTER-------------*/
+    }
+
+
+
+
+
+
+
+
+    @media (max-width: 400px) {
+      /*---------------FOOTER-------------*/
+.footer-col h4{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+.footer-col ul li a{
+    font-size: 10px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+.footer-col p{
+    font-size: 10px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+.copyright-section{
+    background-color: rgb(77, 24, 0);
+    color: rgba(255, 255, 255);
+    font-size: 10px;
+    top: 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.contact_details p{
+    font-size: 8px;
+    color: white;
+    text-transform: lowercase;
+}
+}
+/*---------------RESPONSIVENESS--------*/  

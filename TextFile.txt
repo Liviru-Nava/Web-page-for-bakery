@@ -1,0 +1,5 @@
+Background/ common colours:
+rgba (224, 16, 75)	reddish pink
+rgba(250, 250, 250)	white
+
+Font-style:
